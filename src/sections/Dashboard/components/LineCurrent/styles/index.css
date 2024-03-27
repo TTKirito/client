@@ -1,0 +1,23 @@
+.dashboard-line__current {
+    border-bottom: 1px solid #0d94e7;
+    width: 95%;
+    position: absolute;
+    left: 5%;
+    z-index: 3;   
+    transition:all 1s linear;
+  }
+  
+  .dashboard-line__current::after {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #0d94e7;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    z-index: 3;
+    transition:all 0.1s;
+  }
+  
+  

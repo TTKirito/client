@@ -1,0 +1,34 @@
+.event-details__info-location--section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+
+.event-details__info-location--icon {
+    border-radius: 50%;
+    background-color: #c8dcf1;
+    padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+
+}
+
+.event-details__info-location--img {
+    width: 3rem;
+}
+
+.event-details__info-location--info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.event-details__info-location--street {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #324A5D
+}
+
+.event-details__info-location--country {
+    font-size: 1.4rem;
+
+}

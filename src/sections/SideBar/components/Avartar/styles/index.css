@@ -1,0 +1,29 @@
+.dashboard-avatar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  left: 66px;
+  bottom: 20px;
+}
+
+.dashboard-avatar__image {
+  border-radius: 35%;
+  cursor: pointer;
+  width: 80%;
+  height: 5rem;
+}
+
+.dashboard-avatar__name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #324A5D;
+  margin-top: 10%;
+  margin-bottom: 0rem;
+}
+
+.dashboard-avatar__position {
+  font-size: 1.8rem;
+  color: rgb(109, 109, 109);
+  margin-top: -0.5rem;
+}

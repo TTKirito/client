@@ -1,0 +1,25 @@
+.dashboard-events__time-linehour {
+  display: flex;
+  padding: 2.5rem 0rem;
+  position: relative;
+}
+
+.dashboard-events__time-hour {
+  color: #88949E;
+  font-weight: 600;
+  font-size: 1.8rem
+}
+
+.dashboard-line {
+  width: 100%;
+  /* background-color: rgb(224, 224, 224); */
+  height: 3px;
+  margin-top: 1.2rem;
+  margin-left: 1rem;
+  border-bottom: 1px solid #DEE5F1;
+}
+
+.dashboard-line__dashed {
+  border-bottom: 1px dashed #DEE5F1 !important;
+}
+

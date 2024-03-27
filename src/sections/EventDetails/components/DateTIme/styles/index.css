@@ -1,0 +1,60 @@
+.event-details__info-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #324A5D;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.event-details__info-time {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.event-details__info-time--clock {
+  border-radius: 10px;
+  background-color: #e5f2ec;
+
+  padding: 0.8rem 0.8rem 0.2rem 0.8em;
+  margin-right: 1rem;
+}
+
+.event-details__info-time--clock__icon {
+  width: 2rem;
+}
+
+.event-details__info-time--title {
+  font-size: 1.8rem;
+  margin: 0.5rem 1.3rem 0.5rem 0.5rem;
+
+}
+
+.event-details__info-time--title__icon {
+  position: relative;
+}
+
+.event-details__info-time--title__icon::after {
+  content: "";
+  width: 1.1rem;
+  border-bottom: 1px solid #88949e;
+  background-color: #88949e;
+  position: absolute;
+  left: -7px;
+  top: -1px;
+}
+
+.event-details__info-time--title__icon-dot {
+  position: relative;
+}
+
+.event-details__info-time--title__icon-dot::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #88949e;
+  position: absolute;
+  top: -2px;
+  left: -5px;
+}

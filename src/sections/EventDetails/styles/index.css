@@ -1,0 +1,62 @@
+.event-details__info {
+  display: flex;
+  flex-direction: column;
+  /* display: none !important; */
+  animation: pulse 0.5s;
+}
+
+
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  background-color: #f9f9fa;
+  margin-left: 6rem;
+  padding: 10rem 7rem 0 7rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.event-details__info-meeting--link {
+  color: #324a5d;
+  font-weight: 600;
+  border: 1px solid #dee5f1;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 5rem;
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+}
+
+.event-details__info-bottom {
+  display: inline-block;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.event-details__info-reschedule {
+  float: left;
+  font-size: 1.8rem;
+  padding: 1.5rem 7rem;
+  background-color: #1f7fff;
+  border-radius: 17px;
+  font-weight: 900;
+  color: #ffff;
+  cursor: pointer;
+  width: 52%;
+}
+
+.event-details__info-decline {
+  float: right;
+  font-size: 1.8rem;
+  padding: 1.5rem 7rem;
+  background-color: #dee5f1;
+  border-radius: 17px;
+  font-weight: 900;
+  cursor: pointer;
+  width: 45%;
+
+}

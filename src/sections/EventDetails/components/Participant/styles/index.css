@@ -1,0 +1,41 @@
+.event-details__info-participant--section {
+  display: flex;
+  width: 100%;
+}
+
+.event-details__info-participant--details {
+  display: flex;
+}
+
+.event-details__info-participant {
+  border: 1px solid #dee5f1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+
+  padding: 0.5rem 1rem 0.5rem 1rem
+}
+
+.event-details__info-participant--img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.event-details__info-participant--name {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  color: #324A5D;
+}
+
+.event-details__info-participant--plus {
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.event-details__info-participant--plus::before {
+  content: "+";
+  margin: 0rem 0.5rem 0 0;
+}

@@ -1,0 +1,74 @@
+.dashboard-section {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.dashboard-heading {
+  color: #324A5D;
+  font-weight: 600;
+  padding: 2.5rem 5rem 0rem 7rem;
+  margin-bottom: 0;
+
+  font-size: 2.5rem;
+}
+
+.dashboard-datetime {
+  display: flex;
+  flex-direction: column;
+  padding-left: 7rem;
+  position: relative;
+  width: 100%;
+}
+
+.dashboard-datetime__title {
+  color: #324A5D;
+  font-weight: 600;
+
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.dashboard-datetime__date-section {
+  display: flex;
+}
+
+.dashboard-events__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+.dashboard-events__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-events__title {
+  color: #324A5D;
+  font-weight: 600;
+
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.dashboard-events__view {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  color: #0d94e7;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dashboard-events__last-opacity {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  filter: blur(3px) opacity(0.6);
+  z-index: 2;
+
+  top: 640px;
+  height: 59px;
+}

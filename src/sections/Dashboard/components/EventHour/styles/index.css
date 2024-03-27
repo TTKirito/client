@@ -1,0 +1,104 @@
+.dashboard-event__current {
+    background-color: #E9F6EF;
+    width: 72%;
+    position: absolute;
+    left: 3%;
+    z-index: 2;
+    border-radius: 15px;
+    left: 200px;
+    cursor: pointer;
+}
+
+
+
+
+.dashboard-event__current-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 1rem 0.7rem 3rem;
+}
+
+.dashboard-event__current-section--left {
+    display: flex;
+}
+
+.dashboard-event__current-section--left__icon {
+    background-color: #1F7FFF;
+    border-radius: 10px;
+    height: 5.5rem;
+
+}
+
+.dashboard-event__current-section--left__logo {
+    width: 3rem;
+    height: 3rem;
+    margin: 1.2rem 1rem 0.5rem 1rem;
+}
+
+
+
+.dashboard-event__current-section--left__info {
+    padding-left: 2.5rem;
+}
+
+.dashboard-event__current-section--left__title {
+    font-size: 1.8rem;
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    font-weight: 600;
+    color: #324A5D;
+}
+
+.dashboard-event__current-section--left__datetime {
+    display: flex;
+    font-size: 1.6rem;
+    color: #88949E
+}
+
+
+.dashboard-event__current-section--left__datetime > * {
+    margin: 0 2rem 0 0;
+}
+.dashboard-event__current-section--left__datetime-start {
+    position: relative;
+}
+.dashboard-event__current-section--left__datetime-start::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #88949E;
+    position: absolute;
+    left: -9px;
+    top: 8px;
+}
+
+.dashboard-event__current-section--left__datetime-start::after {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-bottom:1px solid #88949E;
+    position: absolute;
+    right: -10px;
+    top: 6px
+
+}
+
+.dashboard-event__current-section--right {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-event__current-section--right__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 18px;
+    border: 3px solid #ffff;
+}
+
+.dashboard-event__current-section--right__icon {
+    width: 4rem;
+    height: 4rem;
+}

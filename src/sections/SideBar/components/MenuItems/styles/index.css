@@ -1,0 +1,32 @@
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 2.5rem 7.5rem 2rem 7rem;
+  margin: 0.5rem 6rem;
+  text-decoration: none;
+  color: #88949e;
+  position: relative;
+
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.item-active {
+  border: 1px solid #dee5f1;
+  border-radius: 2rem;
+  color: #324a5d !important;
+  pointer-events: none;
+}
+
+.item-icon {
+  width: 13%;
+  position: absolute;
+
+  height: 4rem;
+  left: 18px;
+  bottom: 14px;
+}

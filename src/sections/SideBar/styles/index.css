@@ -1,0 +1,40 @@
+.side-bar {
+  width: 20%;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  border-right: 1px solid #DEE5F1;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* overflow: hidden; hide text  */
+
+.side-bar__logo-section {
+  position: relative;
+  pointer-events: none;
+}
+
+.side-bar__logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: #324A5D;
+
+  font-weight: 650;
+  letter-spacing: -3px;
+
+  margin-left: 20%;
+  font-size: 3rem ;
+  margin-top: 26px;
+  height: 42px;
+  margin-bottom: 1.5rem;
+}
+
+.side-bar__logo img {
+  width: 13%
+}
+

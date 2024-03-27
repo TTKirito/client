@@ -1,0 +1,29 @@
+.notification {
+  border: 1px solid #dee5f1;
+  border-radius: 10px;
+  padding: 0.7rem 0.6rem 0.8rem 0.7rem;
+  position: absolute;
+
+  cursor: pointer;
+
+  height: 4.3rem;
+  right: 50px;
+  top: 39px;
+}
+
+.notification-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+}
+
+.notification::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #27a860;
+  top: -1px;
+  right: -3px;
+}
