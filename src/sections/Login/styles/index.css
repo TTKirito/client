@@ -1,0 +1,46 @@
+.login-section {
+    margin: 220px auto;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 45vh;
+}
+
+.login-section__title {
+    font-size: 4rem;
+    color: #0E101A;
+    font-weight: 500;
+}
+
+.login-section__description {
+    font-size: 2rem;
+    color: #0E101A;
+}
+
+
+.login-section__br {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    position: relative;
+    text-align: center;
+}
+
+.login-section__br::after {
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: #DEE5F1;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+
+.login-section__br::before {
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: #DEE5F1;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+}

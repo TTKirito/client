@@ -11,7 +11,9 @@ interface Props {
 export const Avartar = ({ avatar, firstname, position, lastname }: Props) => {
   return (
     <div className="dashboard-avatar">
+      <div className="dashboard-avatar__image-div">
       <img src={avatar} className="dashboard-avatar__image" />
+      </div>
       <p className="dashboard-avatar__name">
         {firstname} {lastname}
       </p>

@@ -27,3 +27,7 @@
   color: rgb(109, 109, 109);
   margin-top: -0.5rem;
 }
+
+.dashboard-avatar__image-div {
+  width: 55%;
+}

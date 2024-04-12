@@ -4,33 +4,59 @@ import reportWebVitals from "./reportWebVitals";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./styles/index.css";
-import { DashBoard, EventDetails, SideBar } from "./sections";
+import { DashBoard, EventDetails, Login, SideBar } from "./sections";
 import avartarImg from "./assets/user.jpg";
 import { Notification } from "./components/Notification";
-import { Account } from "./types/types";
+import { GetUserResponse, User } from "./sections/Login/types";
+import { useGet } from "./lib/api/useGet";
+import { ApiCall } from "./lib/api";
 
 const App = () => {
+  const username = localStorage.getItem("username")
+  const { data, error } = useGet<GetUserResponse, string>(String(username), ApiCall.GetUser)
+
+  if (error) {
+    localStorage.removeItem("access_token")
+    localStorage.removeItem("username")
+  }
+
   const user = {
     avatar: avartarImg,
-    firstname: "data?.owner",
+    firstname: data?.user.full_name,
     lastname: "",
     position: "data?.position",
   };
+
+  if (data) {
+    return (
+      <Router>
+        <div id="layout">
+          <SideBar user={user} />
+          <Routes>
+            <Route path="/" element={<DashBoard user={user} />} />
+            <Route path="/events" element={<div></div>} />
+            <Route path="/people" element={<div></div>} />
+            <Route path="/calendar" element={<div></div>} />
+            <Route path="/invoices" element={<div></div>} />
+          </Routes>
+          <Notification />
+        </div>
+      </Router>
+    );
+  } 
+
   return (
     <Router>
-      <div id="layout">
-        <SideBar user={user} />
+      <div id = "layout">
         <Routes>
-          <Route path="/" element={<DashBoard user={user} />} />
-          <Route path="/events" element={<div></div>} />
-          <Route path="/people" element={<div></div>} />
-          <Route path="/calendar" element={<div></div>} />
-          <Route path="/invoices" element={<div></div>} />
+          <Route path="*" element={<Login />} />
         </Routes>
-        <Notification />
       </div>
     </Router>
-  );
+  )
+ 
+
+ 
 };
 
 render(<App />, document.getElementById("root"));
